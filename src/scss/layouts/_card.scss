@@ -1,0 +1,58 @@
+@import "./card-dynamics";
+
+.two-column-wrapper .headline {
+	flex: 0 0 100%;
+}
+
+.two-column-wrapper .headline {
+    flex: 0 0 100%;
+
+    h2 {
+        border-width: 1px;
+        border-style: solid;
+
+        border-image: linear-gradient(
+            90deg,
+            rgba( 0, 0, 0, 0 ),
+            rgba( 0, 0, 0, .5 ),
+            rgba( 0, 0, 0, .3 ),
+            rgba( 0, 0, 0, 0 ),
+        ) 1;
+
+        border-top: 0;
+        border-left: 0;
+        max-width: max-content;
+        padding: 1rem;
+    }
+}
+
+.two-column-wrapper .card {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+
+	.card-body-wrapper {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY( -50% );
+        
+		.card-body {
+			margin: 3px 1rem;
+		}
+	}
+
+	figure {
+		position: relative;
+		margin: 0;
+		flex: 1 0 auto;
+		width: 100%;
+		height: 100%;
+        
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

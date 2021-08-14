@@ -1,0 +1,41 @@
+{
+  "name": "friendly-frontend-prototype-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint ./src/scss/* --config ./.stylelintrc --max-warnings 0",
+    "lint:js": "eslint ./src/js/* --config ./.eslintrc --max-warnings 0",
+    "fix:css": "stylelint ./src/scss/* --config ./.stylelintrc --fix",
+    "fix:js": "eslint ./src/js/* --config ./.eslintrc --fix",
+    "dev": "npm run development",
+    "development": "mix",
+    "start": "mix watch",
+    "hot": "mix watch --hot",
+    "dist": "npm run production",
+    "build": "npm run production",
+    "production": "rimraf dist && mix --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^9.1.0",
+    "browser-sync": "^2.27.5",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "eslint": "^7.32.0",
+    "jquery": "^3.6.0",
+    "laravel-mix": "^6.0.27",
+    "laravel-mix-pug-recursive": "^0.3.4",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2",
+    "resolve-url-loader": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.20.1"
+  }
+}

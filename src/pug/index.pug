@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Friendly Frontend Prototyper
+        link( rel="stylesheet", href="style.css" )
+    body
+        header.site-header
+            .container
+                h1 Friendly Frontend Prototyper
+        main
+            include client-viewport.pug
+            include card-wrapper.pug
+
+        footer.site-footer
+            .container
+                p footer
+
+        script( src="index.js" )

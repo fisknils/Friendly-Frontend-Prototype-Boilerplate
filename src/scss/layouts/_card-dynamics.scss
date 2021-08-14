@@ -1,0 +1,38 @@
+/**
+ * Styles of _card.scss
+ *
+ * That might make sense to offer as settings.
+ * The rest of the layout should be able to handle any reasonable changes to these values.
+ *
+ * Kept here to make it easier to pick them out and move them to, for example, gutenberg.
+ */
+
+$cols: 2;
+$card-height: 300px;
+$card-min-width: 200px;
+$card-margin-pct: 1;
+$card-width: ( ( 100 / $cols ) - ( $cols * $card-margin-pct * 2 ) ) * 1%;
+$card-margin: $card-margin-pct * 1%;
+$card-fg-color: white;
+$card-bg-color: rgba( 0, 0, 0, .4 );
+
+.two-column-wrapper {
+	background-image: linear-gradient(
+		180deg,
+		$header-background-color,
+		rgba( 0, 50, 50, 0 )
+	);
+}
+
+.two-column-wrapper .card {
+	height: $card-height;
+	max-height: $card-height;
+	flex: 0 0 $card-width;
+	min-width: $card-min-width;
+	margin: $card-margin;
+
+	.card-body-wrapper {
+		color: white;
+		background-color: $card-bg-color;
+	}
+}
