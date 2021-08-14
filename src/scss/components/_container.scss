@@ -1,0 +1,11 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: auto;
+
+	&:not( .fluid ) {
+		max-width: $container_width;
+		padding: 0 1rem;
+	}
+}

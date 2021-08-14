@@ -1,9 +1,7 @@
 @import "@normalize";
 @import "./config";
-@import "./layouts/base-layout";
-@import "./layouts/card";
-@import "./layouts/viewport";
-
-.debug * {
-	background-color: rgba( 0, 0, 0, .05 );
-}
+@import "./base-layout";
+@import "./components/card";
+@import "./components/viewport";
+@import "./components/gradient-border";
+@import "./components/container";
